@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komunitas Kucing</title>
+  <link rel="stylesheet" href="Latkuiz.css">
+</head>
+<body>
+  <header>
+    <h1>Komunitas Kucing</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('form')">Form</a>
+    <a href="#" onclick="showPage('aksi')">Aksi</a>
+  </nav>
+
+  <div id="home" class="container active">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg" 
+         alt="Internet" width="200" 
+         style="float:left; margin-right:15px; border-radius:10px;">
+    <p>
+      Kucing adalah hewan mamalia kecil yang dikenal dengan sifatnya yang lincah, anggun,
+dan penuh rasa ingin tahu. Tubuhnya lentur dengan bulu lembut yang beragam warna,
+serta mata tajam yang mampu melihat jelas di kondisi minim cahaya. Kucing termasuk
+hewan karnivora, namun dapat beradaptasi hidup bersama manusia sebagai hewan
+peliharaan. Mereka memilki kebiasaan mencakar untuk menandai wilayah, merawat diri
+dengan menjilat bulunya, serta tidur dalam waktu |lama, bisa mencapai 12-16 jam per hari.
+Kucing sering dianggap membawa kenyamanan dan kasih sayang, sehingga menjadi
+salah satu hewan pelitharaan paling populer di dunia
+    </p>
+    <div style="clear:both;"></div>
+  </div>
+
+  <div id="form" class="container">
+    <h2>Formulir Pendaftaran Komunitas Kucing</h2>
+    <form onsubmit="kirimData(event)">
+      <fieldset>
+        <label>Nama:
+          <input type="text" id="nama" placeholder="Masukkan nama">
+        </label>
+
+        <label>Jenis Kelamin:</label>
+        <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+
+        <label>Hobi:
+          <select id="hobi">
+            <option value="Mancing">Mancing</option>
+            <option value="Tidur">Tidur</option>
+            <option value="Ngopi">Ngopi</option>
+          </select>
+        </label>
+
+        <label>Pilihan Ekstra:</label>
+        <label><input type="checkbox" name="ekstra" value="Musik"> Musik</label>
+        <label><input type="checkbox" name="ekstra" value="Olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="ekstra" value="Membaca"> Membaca</label>
+
+        <label>Pesan:
+          <textarea id="pesan" placeholder="Tuliskan pesanmu"></textarea>
+        </label>
+
+        <button type="submit">Kirim</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <div id="aksi" class="container">
+    <h2>Aksi</h2>
+    <p>Terima kasih atas antusiasnya.</p>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
